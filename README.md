@@ -1,8 +1,4 @@
-# hashirshoaeb.github.io/home
 
-## Description
-
-It is a personal static website/portfolio hosted with GitHub Pages. Site URL: [hashirshoaeb.github.io/home](https://hashirshoaeb.github.io/home).
 
 ## Roadmap
 
@@ -29,8 +25,10 @@ Make following components
   - About Me
     - Display picture (using instagram api)
     - Interests, Goals and Hobbies
+  - Work and Education
   - Projects (using gitHub api)
   - Things I'm good at (Skills)
+  - Contact me
 - Footer
   - Acknowledgements (contributors)
   - Copyrights - open source
@@ -38,20 +36,10 @@ Make following components
 
 ## Sharing
 
-Project is open source. Feel free to make your own version. All you need to do is to fork the project and edit the [configurations.json](https://github.com/hashirshoaeb/home/blob/master/src/configurations.json) file. Mark star if you like the project ;)
+Project is open source. Feel free to make your own version.Mark star if you like the project ;)
 
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## Issues
 
-- UI improvments
-- Grammar check | Spelling mistakes
-- Code optimization
-- Hover property on social icons
-- Routing
-
-## License
-
-[LGPL-3.0](https://www.gnu.org/licenses/lgpl-3.0.en.html)
