@@ -1,0 +1,94 @@
+{
+  "backgroundType": "gradient",
+  "plainBackgroundMode": "daylight",
+  "devIntro": "Srijan Shakya",
+  "devDesc": "| Engineer | Programmer | Web Developer ",
+  "gradientColors": "#EE7752, #E73C7E, #23A6D5, #23D5AB",
+  "icons": [
+    {
+      "id": 0,
+      "image": "fa-github",
+      "url": "https://github.com/srijanshk/",
+      "style": "socialicons"
+    },
+    {
+      "id": 1,
+      "image": "fa-facebook",
+      "url": "https://www.facebook.com/srijanshk",
+      "style": "socialicons"
+    },
+    {
+      "id": 2,
+      "image": "fa-instagram",
+      "url": "https://www.instagram.com/srijanshk/",
+      "style": "socialicons"
+    },
+    {
+      "id": 3,
+      "image": "fa-linkedin",
+      "url": "https://www.linkedin.com/in/srijanshk/",
+      "style": "socialicons"
+    }
+  ],
+  "skillsIcons": [
+    {
+      "id": 0,
+      "image": "fa-js",
+      "style": "socialicons"
+    },
+    {
+      "id": 1,
+      "image": "fa-react",
+      "style": "socialicons"
+    },
+    {
+      "id": 2,
+      "image": "fa-angular",
+      "style": "socialicons"
+    },
+    {
+      "id": 3,
+      "image": "fa-node-js",
+      "style": "socialicons"
+    },
+    {
+      "id": 4,
+      "image": "fa-npm",
+      "style": "socialicons"
+    },
+    {
+      "id": 5,
+      "image": "fa-yarn",
+      "style": "socialicons"
+    },
+    {
+      "id": 6,
+      "image": "fa-css3-alt",
+      "style": "socialicons"
+    },
+    {
+      "id": 7,
+      "image": "fa-sass",
+      "style": "socialicons"
+    },
+    {
+      "id": 8,
+      "image": "fa-html5",
+      "style": "socialicons"
+    }
+  ],
+  "WorkAndEducation" : [
+    {
+      "id": 0,
+      "name" : "Seva Development",
+      "date" : "2018 - Present"
+    }
+  ],
+  "instaLink": "https://www.instagram.com/",
+  "instaUsername": "srijanshk",
+  "instaQuerry": "/?__a=1",
+  "aboutDev": "An Engineer who currently working at SevaDevelopment as Associate Software Engineer. He holds a Bachelor's degree in Electical and Electronics Engineering from Kathmandu University School of Engineering.",
+  "gitHubLink": "https://api.github.com/users/",
+  "gitHubUsername": "srijanshk",
+  "gitHubQuerry": "/repos?sort=updated&direction=desc"
+}
