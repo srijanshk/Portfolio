@@ -77,17 +77,42 @@
       "style": "socialicons"
     }
   ],
-  "WorkAndEducation" : [
+  "Work" : [
     {
-      "id": 0,
       "name" : "Seva Development",
-      "date" : "2018 - Present"
+      "title" : "Associate Software Engineer",
+      "date" : "2018/Nov - Present",
+      "location" : "Pokhara, Kaski",
+      "more" : "React.js developer, Front-end Developement, Back-end Development, QA, Team Lead"
+    },
+    {
+      "name" : "Seva Development",
+      "title" : "Intern Engineer",
+      "date" : "2018/Aug - 2018/Nov",
+      "location": "Sundarbazar, Lamjung",
+      "more" : "Software Developement Lifecyle, Team buliding, Agile and Scrum Methodology, "
+    }
+  ],
+  "Education" : [
+    {
+      "Institution" : "Kathmandu University",
+      "Faculty" : "SOE, Department of Electrical and Electronics Engineering",
+      "date" : "2014-2018",
+      "location" : "Dhulikhel, Kavre",
+      "more" : "Programming, Mathematics, Robotics, Satellite Communications"
+    },
+    {
+      "Institution" : "Bishnu Memorial Higher Secondary School",
+      "Faculty" : "HSEB, +2 Science",
+      "date" : "2012-2014",
+      "location" : "Dharan, Sunsari",
+      "more" : "Physics, Chemistry, Mathematics"
     }
   ],
   "instaLink": "https://www.instagram.com/",
   "instaUsername": "srijanshk",
   "instaQuerry": "/?__a=1",
-  "aboutDev": "An Engineer who currently working at SevaDevelopment as Associate Software Engineer. He holds a Bachelor's degree in Electical and Electronics Engineering from Kathmandu University School of Engineering.",
+  "aboutDev": "An Engineer who is currently working at SevaDevelopment as Associate Software Engineer. He holds a Bachelor's degree in Electical and Electronics Engineering from Kathmandu University School of Engineering.",
   "gitHubLink": "https://api.github.com/users/",
   "gitHubUsername": "srijanshk",
   "gitHubQuerry": "/repos?sort=updated&direction=desc"

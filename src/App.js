@@ -12,6 +12,8 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import $ from "jquery";
 import Popper from "popper.js";
+import WorkIcon from "@material-ui/icons/Work";
+import SchoolIcon from "@material-ui/icons/School";
 
 class MainBody extends Component {
   constructor(props) {
@@ -168,6 +170,8 @@ class Education extends Component {
     };
   }
   render() {
+    const work = Configs.Work;
+    const education = Configs.Education;
     return (
       <div
         id="divproject"
@@ -177,55 +181,47 @@ class Education extends Component {
           <h1 className="display-4 pb-3">{this.state.heading}</h1>
           <p className="pb- lead">{this.state.subHeading}</p>
         </div>
+        <div className="workcontainer">
         <VerticalTimeline>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-            date="2018/Nov - present"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Associate Software Engineer @ Seva Development
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Pokhara, Kaski
-            </h4>
-            <p>
-              React.js developer, Front-end Developement, Back-end Development,
-              QA, Team Lead
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2018/Aug - 2018/Nov"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Intern Engineer @ Seva Developement
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Sundarbazar, Lamjung
-            </h4>
-            <p>Software Developement Lifecyle, Team buliding</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            date="2014 - 2018"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Kathmandu University
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Dhulikhel, Kavre
-            </h4>
-            <p>
-              School of Engineering, Department of Elecltrical and Electronics
-              Engineering
-            </p>
-          </VerticalTimelineElement>
+          {work.map((work, index) => (
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              date={work.date}
+              iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+              icon={<WorkIcon />}
+              key={index}
+            >
+              <h3 className="vertical-timeline-element-title">{work.name}</h3>
+              <h3 className="vertical-timeline-element-title">{work.title}</h3>
+              <h4 className="vertical-timeline-element-subtitle">
+                {work.location}
+              </h4>
+              <p>{work.more}</p>
+            </VerticalTimelineElement>
+          ))}
+          {education.map((education, index) => (
+            <VerticalTimelineElement
+              className="vertical-timeline-element--education"
+              date={education.date}
+              iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+              icon={<SchoolIcon />}
+              key={index}
+            >
+              <h3 className="vertical-timeline-element-title">
+                {education.Institution}
+              </h3>
+              <h3 className="vertical-timeline-element-title">
+                {education.Faculty}
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle">
+                {education.location}
+              </h4>
+              <p>{education.more}</p>
+            </VerticalTimelineElement>
+          ))}
         </VerticalTimeline>
+        </div>
+        
       </div>
     );
   }
@@ -249,7 +245,7 @@ class Project extends Component {
       .then(response => {
         // handle success
         this.setState({
-          projectsArray: response.data.slice(0, 4)
+          projectsArray: response.data
         });
       })
       .catch(function(error) {

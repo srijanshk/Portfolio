@@ -82,3 +82,7 @@
   transition: all 0.8s;
   margin: 4px;
 }
+
+.workcontainer {
+  background: lightgrey;
+}
